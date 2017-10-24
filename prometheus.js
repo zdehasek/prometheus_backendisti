@@ -33,7 +33,7 @@ const prometheus = {
         this.backendistiVoting = new promClient.Gauge({
             name: 'backendistiVoting',
             help: 'hlasovací metrika pro přednášku backendisti',
-            labelNames: ['name', 'query', 'status', 'method', 'message', 'originalUrl', 'userAgent'],
+            labelNames: ['name', 'query', 'status', 'method', 'message', 'originalUrl', 'userAgent', 'ip'],
             registers: [this.register]
         });
 
